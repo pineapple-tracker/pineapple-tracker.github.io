@@ -16,11 +16,26 @@
              transform: rotate(2deg);
          }
          h1:hover {
-             background-color: f030f0;
+             background-color: #f030f0;
          }
          .pineapple-container {
              margin-top: 100px;
              text-align: center;
+         }
+         .tracker {
+             font-family: monospace;
+             white-space: pre;
+         }
+         .help {
+             background-color: #ffff73;
+             border-radius: 10px;
+             display: none;
+             opacity: 0.9;
+             padding: 10px;
+             z-index: 100;
+         }
+         .help-link:hover + span {
+             display: inline;
          }
         </style>
     </head>
@@ -41,8 +56,8 @@
     \
             </pre>
 
-            <pre>
-PINEAPPLEtRACKER °93()  π4<>   ┌01{}               ┌01[]    step -= 1
+            <div class="tracker">
+<a href="#" class="help-link">PINEAPPLEtRACKER</a><span class="help">Title</span> <a href="#" class="help-link">°93()</a><span class="help">Use ( and ) to change tempo.</span>  <a href="#" class="help-link">π4<></a><span class="help">Use < and > to switch ?</span>   <a class="help-link">┌01{}</a>               ┌01[]    step -= 1
 ┌ 0002:00 00:00 00:00 00:00  00└ E-4 01 v05 ...  00└ w 02
 │ 0101:00 00:00 00:00 00:00  01┌ --- 00 ... ...  01┌ + C-4  comment:
 │ 0202:00 10:00 30:00 30:f4  02│ H-3 00 v10 ...
@@ -70,7 +85,7 @@ PINEAPPLEtRACKER °93()  π4<>   ┌01{}               ┌01[]    step -= 1
                              18├ E-4 01 v65 ...
                              19│ --- 00 ... ...
 songs/josh.song
-            </pre>
+            </div><!-- end .tracker -->
         </div><!-- end .pineapple-container -->
     </body>
 </html>
